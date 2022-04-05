@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:winNetApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="329" Width="560">
+    <StackPanel Margin="86,85,86,100">
+        <Button Content="Button" Width="260" Height="47" Click="ボタンクリック共通処理"/>
+        <Button Content="Button" Click="Button_Click"/>
+        <Button Content="ぼたん" Background="#FFD02F2F"/>
+    </StackPanel>
 </Window>

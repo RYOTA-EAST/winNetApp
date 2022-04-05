@@ -24,5 +24,15 @@ namespace winNetApp
         {
             InitializeComponent();
         }
+
+        private void ボタンクリック共通処理(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("こんにちは");
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Title = "buttonが押されました。";
+        }
     }
 }
