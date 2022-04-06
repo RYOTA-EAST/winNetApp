@@ -34,5 +34,11 @@ namespace winNetApp
         {
             this.Title = "buttonが押されました。";
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var window = new Window1();
+            window.Show();
+        }
     }
 }

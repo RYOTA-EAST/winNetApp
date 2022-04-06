@@ -10,5 +10,6 @@
         <Button Content="Button" Width="260" Height="47" Click="ボタンクリック共通処理"/>
         <Button Content="Button" Click="Button_Click"/>
         <Button Content="ぼたん" Background="#FFD02F2F"/>
+        <Button Content="画面表示" Click="Button_Click_1"/>
     </StackPanel>
 </Window>
