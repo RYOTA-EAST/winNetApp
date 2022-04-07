@@ -23,5 +23,12 @@ namespace winNetApp
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int sum_answer;
+            sum_answer = int.Parse(Num1Text.Text) + int.Parse(Num2Text.Text);
+            MessageBox.Show(sum_answer.ToString());
+        }
     }
 }

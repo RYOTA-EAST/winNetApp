@@ -6,8 +6,23 @@
         xmlns:local="clr-namespace:winNetApp"
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
-    <Grid>
-        <Label Content="新しいwindow" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"/>
+    <Grid HorizontalAlignment="Right" Width="800">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="新しいwindow" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" Margin="0,166,0,0" Height="58" Grid.Row="3" Width="224" Grid.Column="2"/>
+        <Rectangle Grid.RowSpan="3" Stroke="Black" Fill="#FF4659BC"/>
+        <Rectangle Grid.Column="1" Stroke="Black" Fill="#FFAFC6A8"/>
+        <TextBox x:Name="Num2Text" TextWrapping="Wrap" Text="" Margin="147,28,70,29" Grid.Column="1" Width="50" Height="30"/>
+        <TextBox x:Name="Num1Text" TextWrapping="Wrap" Text="" Margin="16,28,201,29" Width="50" Height="30" Grid.Column="1"/>
+        <TextBlock TextWrapping="Wrap" RenderTransformOrigin="-0.799,0.378" Margin="84,0,0,0" Grid.Column="1" Width="50" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18" TextAlignment="Center"><Run Text="+"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <Button Grid.Column="1" Content="=" HorizontalAlignment="Left" Margin="215,0,0,0" VerticalAlignment="Center" Width="34" Click="Button_Click"/>
 
     </Grid>
 </Window>
