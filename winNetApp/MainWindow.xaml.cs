@@ -40,5 +40,11 @@ namespace winNetApp
             var window = new Window1();
             window.Show();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            var window = new Window2();
+            window.Show();
+        }
     }
 }
