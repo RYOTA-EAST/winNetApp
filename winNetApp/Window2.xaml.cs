@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace winNetApp
 {
@@ -26,7 +27,11 @@ namespace winNetApp
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
+            string path = "test.txt";
+            string text = InputText.Text;
 
+            //「path」に「text」を書き込み
+            File.WriteAllText(path, text);
         }
     }
 }

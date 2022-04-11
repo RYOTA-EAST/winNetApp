@@ -8,7 +8,7 @@
         Title="Window2" Height="450" Width="800">
     <WrapPanel Orientation="Vertical">
         <StackPanel>
-            <TextBox TextWrapping="Wrap" Text="TextBox" Width="430" Height="100" Margin="10,10,10,10" VerticalScrollBarVisibility="Visible" AcceptsReturn="True"/>
+            <TextBox x:Name="InputText" TextWrapping="Wrap" Text="TextBox" Width="430" Height="100" Margin="10,10,10,10" VerticalScrollBarVisibility="Visible" AcceptsReturn="True"/>
             <Button x:Name="SaveButton" Content="保存" Width="150" Height="20" HorizontalAlignment="Left" Margin="10,0,0,10" Click="SaveButton_Click"/>
         </StackPanel>
         <StackPanel>
