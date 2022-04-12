@@ -33,5 +33,11 @@ namespace winNetApp
             //「path」に「text」を書き込み
             File.WriteAllText(path, text);
         }
+
+        private void LaodButton_Click(object sender, RoutedEventArgs e)
+        {
+            string path = "test.txt";
+            LoadText.Text = File.ReadAllText(path);
+        }
     }
 }

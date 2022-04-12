@@ -12,8 +12,8 @@
             <Button x:Name="SaveButton" Content="保存" Width="150" Height="20" HorizontalAlignment="Left" Margin="10,0,0,10" Click="SaveButton_Click"/>
         </StackPanel>
         <StackPanel>
-            <Button x:Name="LaodButton" Content="開く" Width="150" Height="20" HorizontalAlignment="Left" Margin="10,10,0,0"/>
-            <TextBox x:Name="LaodText" TextWrapping="Wrap" Text="TextBox" Width="430" Height="100" Margin="10,10,10,10" VerticalScrollBarVisibility="Visible" IsReadOnly="True"/>
+            <Button x:Name="LaodButton" Content="開く" Width="150" Height="20" HorizontalAlignment="Left" Margin="10,10,0,0" Click="LaodButton_Click"/>
+            <TextBox x:Name="LoadText" TextWrapping="Wrap" Text="TextBox" Width="430" Height="100" Margin="10,10,10,10" VerticalScrollBarVisibility="Visible" IsReadOnly="True"/>
         </StackPanel>
         <CheckBox Content="CheckBox"/>
         <CheckBox Content="CheckBox"/>
